@@ -3,7 +3,7 @@
 module.exports = function (environment) {
   'use strict';
   const ENV = {
-    modulePrefix: 'ga-wdi-boston.ember-auth',
+    modulePrefix: 'rate-my-photos',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
