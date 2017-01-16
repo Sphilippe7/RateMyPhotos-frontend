@@ -42,12 +42,17 @@
 </div>
 
 
-
-
-<form class="timeline">
-  <h5>Rate these Photos</h5>
-</form>
+<h6>Greetings</h6>
+<div class="greeting">
+<p>This site is desined for Photographers who want to show their work to others and/or help photographers get better! Sign up and then rate photos. Post your own photos and see the ratings you receive!
+</p>
+</div>
 
 {{#if isAuthenticated}}
-{{#link-to "your-photos"}}Your Photos{{/link-to}}
+  {{#link-to "your-photos"}}Your Photos{{/link-to}}
+{{/if}}
+
+
+{{#if isAuthenticated}}
+  {{#link-to "view-photos"}}Rate these Photos{{/link-to}}
 {{/if}}

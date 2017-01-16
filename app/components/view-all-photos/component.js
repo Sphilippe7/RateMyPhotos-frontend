@@ -5,8 +5,5 @@ export default Ember.Component.extend({
     click() {
       console.log('i clicked');
     },
-    deletePhoto() {
-      console.log('it is gone!');
-    }
   }
 });
