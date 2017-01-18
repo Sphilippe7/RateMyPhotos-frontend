@@ -1,12 +1,18 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  newPhoto: {
+    url: null,
+  },
   actions: {
-    click() {
-      console.log('i clicked');
+
+    deletePhoto(photo) {
+      console.log('photo is photo', photo);
+      this.sendAction('deletePhoto', this.get('photo'));
     },
-    deletePhoto() {
-      console.log('it is gone!');
+    createPhoto(newPhoto) {
+      console.log('photo is photo', newPhoto);
+      this.sendAction('createPhoto', this.get('newPhoto'));
     }
   }
 });

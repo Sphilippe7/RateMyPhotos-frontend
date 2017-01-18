@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-transparent">
   <div class="container-fluid">
     {{navbar-header}}
 
@@ -41,18 +41,12 @@
   {{outlet}}
 </div>
 
+<div class="links">
+  {{#if isAuthenticated}}
+    {{#link-to "your-photos"}}Your Photos{{/link-to}}
+  {{/if}}
 
-<h6>Greetings</h6>
-<div class="greeting">
-<p>This site is desined for Photographers who want to show their work to others and/or help photographers get better! Sign up and then rate photos. Post your own photos and see the ratings you receive!
-</p>
+  {{#if isAuthenticated}}
+    {{#link-to "view-photos"}}Rate these Photos{{/link-to}}
+  {{/if}}
 </div>
-
-{{#if isAuthenticated}}
-  {{#link-to "your-photos"}}Your Photos{{/link-to}}
-{{/if}}
-
-
-{{#if isAuthenticated}}
-  {{#link-to "view-photos"}}Rate these Photos{{/link-to}}
-{{/if}}
