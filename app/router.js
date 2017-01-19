@@ -6,6 +6,7 @@ const Router = Ember.Router.extend({
   actions: {
     create() {},
     destroy() {},
+    update() {},
   }
 });
 
@@ -16,6 +17,7 @@ Router.map(function() {
   this.route('users');
   this.route('your-photos');
   this.route('view-photos');
+  this.route('update');
 });
 
 export default Router;

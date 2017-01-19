@@ -1,7 +1,22 @@
-All of your art!
+<hr>
+
+<p>All of your art!</p>
+
+<hr>
+
+
 
 {{#each model as |photo|}}
   {{your-photo photo=photo
                deletePhoto='deletePhoto'
                createPhoto='createPhoto'}}
+  {{#link-to "update" photo=photo}}Edit Your Photos{{/link-to}}
 {{/each}}
+
+
+
+
+
+
+
+{{!-- editPhoto='editPhoto' --}}

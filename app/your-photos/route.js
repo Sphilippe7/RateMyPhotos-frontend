@@ -15,6 +15,7 @@ export default Ember.Route.extend({
       console.log('photo is photo', newPhoto);
       let photo = this.get('store').createRecord('photo', newPhoto);
       photo.save();
-    }
+    },
+
   }
 });

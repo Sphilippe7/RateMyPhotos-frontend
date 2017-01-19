@@ -1,0 +1,7 @@
+{{photo}}
+<form {{action 'editPhoto' on='submit'}}>
+  {{input placeholder='Photo url' value=photo.url}}
+  {{input placeholder='name' value=photo.name}}
+  {{input placeholder='category' value=photo.category}}
+  <button class='btn btn-xs btn-success' type='submit'>Update Photo</button>
+</form>

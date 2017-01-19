@@ -32,6 +32,7 @@ h3 {
 p {
   font-family: monospace;
   text-align: center;
+  color: white;
 }
 
 h6 {
@@ -42,4 +43,10 @@ h6 {
   justify-content: center;
   margin-top: 150px;
   text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: auto;
 }
