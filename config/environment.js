@@ -49,7 +49,9 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
+    ENV.rootUrl = '/rate-my-photos';
     ENV.locationType = 'hash';
+    ENV.apiHost = 'https://floating-escarpment-34212.herokuapp.com';
   }
 
   return ENV;
