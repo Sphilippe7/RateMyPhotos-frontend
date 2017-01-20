@@ -1,15 +1,8 @@
-<div class='cphotos'>
+
   <img src='{{photo.url}}' height=150px width=200>
   <p>{{photo.name}}</p>
-</div>
+
 
 <button class="btn btn-xs btn-danger" {{action 'deletePhoto'}}>
   Delete
 </button>
-
-  <form {{action 'createPhoto' on='submit'}}>
-    {{input placeholder='Photo url' value=newPhoto.url}}
-    {{input placeholder='name' value=newPhoto.name}}
-    {{input placeholder='category' value=newPhoto.category}}
-    <button class='btn btn-xs btn-success' type='submit'>Post a Photo!</button>
-  </form>

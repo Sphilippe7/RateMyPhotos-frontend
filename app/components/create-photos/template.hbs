@@ -1,0 +1,11 @@
+
+
+<form {{action 'createPhoto' on='submit'}}>
+  {{input placeholder='Photo url' value=newPhoto.url}}
+  {{input placeholder='name' value=newPhoto.name}}
+  {{input placeholder='category' value=newPhoto.category}}
+</form>
+
+<button class="btn btn-xs btn-success btn-block" {{action 'createPhoto'}}>
+  Post a Photo
+</button>

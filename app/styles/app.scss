@@ -29,24 +29,25 @@ h3 {
   text-align: center;
 }
 
+h4 {
+  color: $purple;
+  text-align: center;
+  text-shadow: 1px 1px $white;
+}
+
 p {
+  color: $purple;
   font-family: monospace;
   text-align: center;
-  color: white;
+  text-shadow: 1px 1px $white;
 }
 
 h6 {
+  color: $purple;
   text-align: center;
+  text-shadow: 1px 1px $white;
 }
 
-.links {
-  justify-content: center;
-  margin-top: 150px;
-  text-align: center;
-}
-
-img {
-  display: block;
-  margin: auto;
-  width: auto;
+.star-rating {
+  color: $white;
 }

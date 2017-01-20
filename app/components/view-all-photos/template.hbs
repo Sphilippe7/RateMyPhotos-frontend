@@ -2,4 +2,6 @@
 <img src='{{photo.url}}' height=150px width=200>
 <p>{{photo.name}}</p>
 </div>
-{{star-rating 2.5}}
+<div class='star-rating'>
+{{star-rating item=photo rating=photo.rating on-click="updateRating"}}
+</div>

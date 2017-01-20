@@ -17,7 +17,7 @@ Router.map(function() {
   this.route('users');
   this.route('your-photos');
   this.route('view-photos');
-  this.route('update');
+  this.route('createphoto');
 });
 
 export default Router;

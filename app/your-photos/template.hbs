@@ -4,19 +4,13 @@
 
 <hr>
 
+{{#link-to "createphoto"}}Post a Photo{{/link-to}}
+
+<hr>
 
 
 {{#each model as |photo|}}
-  {{your-photo photo=photo
-               deletePhoto='deletePhoto'
-               createPhoto='createPhoto'}}
-  {{#link-to "update" photo=photo}}Edit Your Photos{{/link-to}}
+  {{#if photo.editable}}
+      {{your-photo photo=photo deletePhoto='deletePhoto'}}
+  {{/if}}
 {{/each}}
-
-
-
-
-
-
-
-{{!-- editPhoto='editPhoto' --}}
